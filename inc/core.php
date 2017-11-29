@@ -122,7 +122,7 @@ class RWMB_Core {
 					foreach ( $wp_meta_boxes[ $page ][ $context ][ $priority ] as $box ) {
 						if ( false == $box || ! $box['title'] )
 							continue;
-						echo '<div id="' . $box['id'] . '" class="seamlessbox ' . postbox_classes($box['id'], $page) . $hidden_class . '" ' . '>';
+						echo '<div id="' . $box['id'] . '" class="rwmb-seamlessbox ' . postbox_classes($box['id'], $page) . $hidden_class . '" ' . '>';
 						echo '<h2 class="hndle"><span>' . $box['title'] . '</span></h2>';
 						echo '<div class="inside">';
 						call_user_func( $box['callback'], $object, $box );
